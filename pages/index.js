@@ -1,9 +1,11 @@
 import Index from "./components";
+import Drawer from "./components/CartDrawer/Drawer";
 import ProductItem from "./components/product/ProductItem";
 
 export default function Home({ data }) {
   return (
     <Index>
+      <Drawer />
       <div className="space-y-4">
         <div className="grid grid-cols-1 md:grid-cols-3 grid-rows-4 gap-4">
           {data && data.products && data.products.map((p) => (
